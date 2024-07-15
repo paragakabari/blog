@@ -32,6 +32,25 @@
 
   gtag('config', 'AW-11033769168');
 </script>
+
+<script
+      async
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+
+      googletag.cmd.push(() => {
+        // Define an ad slot for div with id "banner-ad".
+        googletag
+          .defineSlot("/6355419/Travel/Europe/France/Paris", [300, 250], "banner-ad")
+          .addService(googletag.pubads());
+
+        // Enable the PubAdsService.
+        googletag.enableServices();
+      });
+    </script>
   </head>
 
   <body>
@@ -306,6 +325,7 @@
                 </p>
               </div>
             </div>
+            <div id="banner-ad" style="width: 100%; height: 250px"></div>
 
          
 
@@ -520,6 +540,12 @@
     ></a>
 
     <script src="js/index.bundle3875.js?1fcca2a2c42e9d47a3eb"></script>
+    <script>
+      googletag.cmd.push(() => {
+        // Request and render an ad for the "banner-ad" slot.
+        googletag.display("banner-ad");
+      });
+    </script>
   </body>
 
   

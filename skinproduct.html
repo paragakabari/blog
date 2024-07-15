@@ -32,6 +32,28 @@
 
   gtag('config', 'AW-11033769168');
 </script>
+
+  <script
+      async
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+
+      googletag.cmd.push(() => {
+        // Define an ad slot for div with id "banner-ad".
+        googletag
+          .defineSlot("/6355419/Travel/Europe/France/Paris", [300, 250], "banner-ad")
+          .addService(googletag.pubads());
+
+        // Enable the PubAdsService.
+        googletag.enableServices();
+      });
+    </script>
+
+
+
   </head>
 
   <body>
@@ -275,6 +297,13 @@
                 <!-- <figure>
             <img src="images/article10.jpg" alt="" class="img-fluid">
         </figure> -->
+        <div id="banner-ad" style="width: 300px; height: 250px"></div>
+    <script>
+      googletag.cmd.push(() => {
+        // Request and render an ad for the "banner-ad" slot.
+        googletag.display("banner-ad");
+      });
+    </script>
               <p><b>1. The negative impacts of Eurocentric beauty standards on people of color</b></p>
               <p>It's crucial to maintain a critical perspective on beauty standards that have long harmed people of color. Topics like this help raise awareness of the challenges they face in the beauty industry.</p>    
 

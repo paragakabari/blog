@@ -32,6 +32,25 @@
 
   gtag('config', 'AW-11033769168');
 </script>
+
+<script
+async
+src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+crossorigin="anonymous"
+></script>
+<script>
+window.googletag = window.googletag || { cmd: [] };
+
+googletag.cmd.push(() => {
+  // Define an ad slot for div with id "banner-ad".
+  googletag
+    .defineSlot("/6355419/Travel/Europe/France/Paris", [300, 250], "banner-ad")
+    .addService(googletag.pubads());
+
+  // Enable the PubAdsService.
+  googletag.enableServices();
+});
+</script>
   </head>
 
   <body>
@@ -279,6 +298,13 @@
                 <p>
                     <b>Fuel Efficiency: </b>Hybrids typically achieve better fuel efficiency than conventional vehicles because they can use electric power during low-speed or stop-and-go driving, where internal combustion engines are less efficient.
                 </p>
+                <div id="banner-ad" style="width: 300px; height: 250px"></div>
+                <script>
+                  googletag.cmd.push(() => {
+                    // Request and render an ad for the "banner-ad" slot.
+                    googletag.display("banner-ad");
+                  });
+                </script>
                 <h5>1. Toyota Prius
                 </h5>
                 <p>
