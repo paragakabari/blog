@@ -51,6 +51,27 @@ googletag.cmd.push(() => {
 });
 </script>
 
+<script>
+  window.googletag = window.googletag || { cmd: [] };
+  
+  googletag.cmd.push(() => {
+    // Define an ad slot for div with id "banner-ad".
+    googletag
+      .defineSlot("/6355419/Travel/Europe/France/Paris", [300, 250], "banner-ad1")
+      .addService(googletag.pubads());
+  
+    // Enable the PubAdsService.
+    googletag.enableServices();
+  });
+  </script>
+  
+
+
+
+
+
+
+
   </head>
 
   <body>
@@ -1094,6 +1115,8 @@ googletag.cmd.push(() => {
                   </div>
                 </div>
               </aside>
+              <div id="banner-ad1" style="width: 300px; height: 250px"></div>
+
               <aside class="wrapper__list__article">
                 <h4 class="border_section">technology</h4>
 
@@ -1382,7 +1405,12 @@ googletag.cmd.push(() => {
       });
     </script>
 
-
+<script>
+  googletag.cmd.push(() => {
+    // Request and render an ad for the "banner-ad" slot.
+    googletag.display("banner-ad1");
+  });
+</script>
 
   </body>
 
