@@ -32,6 +32,25 @@
 
   gtag('config', 'AW-11033769168');
 </script>
+<script
+async
+src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+crossorigin="anonymous"
+></script>
+<script>
+window.googletag = window.googletag || { cmd: [] };
+
+googletag.cmd.push(() => {
+  // Define an ad slot for div with id "banner-ad".
+  googletag
+    .defineSlot("/6355419/Travel/Europe/France/Paris", [300, 250], "banner-ad")
+    .addService(googletag.pubads());
+
+  // Enable the PubAdsService.
+  googletag.enableServices();
+});
+</script>
+
   </head>
 
   <body>
@@ -226,6 +245,8 @@
     <!-- Tranding news  carousel-->
  
       <div id="container-8d2adf25e97b6ba938d84169f4465d69"></div>
+    <div id="banner-ad" style="width: 300px; height: 250px"></div>
+
     <section class="bg-light">
       <div class="container">
         <div class="row">
@@ -423,6 +444,12 @@
    
       <div id="container-8d2adf25e97b6ba938d84169f4465d69"></div>
     <!-- Popular news -->
+   
+
+
+   
+   
+   
     <div
     class="card__post card__post-list card__post__transition mt-30"
   >
@@ -1348,6 +1375,14 @@
     ></a>
 
     <script src="js/index.bundle3875.js?1fcca2a2c42e9d47a3eb"></script>
+    <script>
+      googletag.cmd.push(() => {
+        // Request and render an ad for the "banner-ad" slot.
+        googletag.display("banner-ad");
+      });
+    </script>
+
+
 
   </body>
 
