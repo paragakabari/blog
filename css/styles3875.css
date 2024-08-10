@@ -11775,7 +11775,7 @@ input[type="number"] {
     left: 0;
     width: 50px;
     height: 5px;
-    background: #c00;
+    background: #1d9ede;
     z-index: 1;
 }
 .wrapper__list__article .border_section:after {
