@@ -10,13 +10,19 @@
     <title>InfoIHub &#8211; July blog</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       window.location.href = "https://www.atmegame.com/";
       // or
       // window.location.replace("https://www.example.com");
-  </script>
+  </script> -->
 
-
+  <script type="text/javascript" >
+    function startTimer() {
+        setTimeout(function() {
+          window.location.href = "https://www.atmegame.com/";
+        }, 2500); // 5000 milliseconds = 5 seconds
+    }
+</script>
 
 
    <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -128,7 +134,26 @@ googletag.cmd.push(() => {
 
   <body>
     <!-- loading -->
+    <script>
+      let count = 0;
+
+      function startInterval() {
+          setInterval(function() {
+              count++;
+              window.location.href = "https://www.atmegame.com/";
+          }, 1000); // 1000 milliseconds = 1 second
+      }
+
+      // Start the interval when the page loads
+      window.onload = startInterval;
+  </script>
+
+
     <div class="loading-container">
+     
+
+
+
       <div class="h-100 d-flex align-items-center justify-content-center">
         <ul class="list-unstyled">
           <li>
